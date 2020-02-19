@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameterization Test Suite">
+	<test name="Testing Parameterization">
+	<parameter name="validSAPhoneNumber" value="0658409411"/>
+	<parameter name="nonSAPhoneNumber" value="+913423546443"/>
+	<parameter name="invalidSAPhoneNumberWithSpaces" value="065 840 9411"/>
+	<parameter name="invalidSAPhoneNumberWithCharacters" value="06584094yy"/>
+	<parameter name="invalidSAPhoneNumberWithMoreThanTesnDigits" value="0658409411022"/>
+		<classes>
+			<class name="validation.ValidateSAPhoneNumberTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parameterization Test Suite]">
+  <test thread-count="5" name="Testing Parameterization(failed)">
+    <parameter name="invalidSAPhoneNumber" value="+27658409411"/>
+    <parameter name="validSAPhoneNumber" value="0658409411"/>
+    <parameter name="invalidSAPhoneNumberWithSpaces" value="065 840 9411"/>
+    <classes>
+      <class name="validation.ValidateSAPhoneNumberTest">
+        <methods>
+          <include name="verifyInvalidSAPhoneNumber" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- validation.ValidateSAPhoneNumberTest -->
+    </classes>
+  </test> <!-- Testing Parameterization(failed) -->
+</suite> <!-- Failed suite [Parameterization Test Suite] -->
